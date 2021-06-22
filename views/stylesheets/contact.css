@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* determines the listing type :: whether round, square, none etc  */
+li {
+    list-style: none;
+  }
+  
+  /* navigation bar styling */
+  nav {
+      overflow: hidden;
+      padding-bottom: 10px;
+      background-color: white;;
+
+  }
+  
+  nav a:hover{
+      color: rgb(247, 247, 157);
+  }
+  
+  .nav-left {
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .logo {
+    float: left;
+    margin-top: 5px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    background-color: white;
+    border-style: solid; 
+    padding: 3px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+
+  .logo a:hover {
+    color: rgb(247, 247, 157);
+  }
+
+  .topnav {
+    background-color: white;
+  }
+
+  
+  #active:hover {
+    color: rgb(247, 247, 157);
+  }
+  
+  /* Navigation links styling */
+  nav a {
+      float: right;
+      text-align: center;
+      padding: 10px 20px;
+      display: inline-block;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      list-style-type: none;
+      font-family: 'Poppins', sans-serif;
+      display: inline-block;
+      margin-top: 5px; 
+    }
+
+  /* Top Navigation bar for smaller screen-sizes i.e mobile phones  */
+.topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo a {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  } 
+
+  /* testimonials styling */
+.row {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.m-image {
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    border: solid rgb(153, 153, 161);
+}
+
+
+.column {
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    position: inherit;
+    color: black;
+    padding: 2%;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    margin: auto;
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  @media screen and (max-width: 800px) {
+      .column {
+          width: 90%;
+      }
+      .container {
+          margin-bottom: 36%;
+      }
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid black;
+    background: #353e46;
+    color: white;
+    height: 70px;
+  }
+
+  .contact {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  
+
+  footer p {
+    color: white;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: -100px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+    background: #353e46;
+    padding-top: 5%;
+  }

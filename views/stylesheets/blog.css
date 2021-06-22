@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&amp;display=swap");
+
+:root {
+  /* Primary*/
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral*/
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--Light-grayish-blue);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  color: var(--White);
+  line-height: 1.3;
+}
+
+h1,
+h3 {
+  font-weight: 500;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 5rem 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+header {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+header p {
+  opacity: 50%;
+}
+
+img {
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.review {
+  opacity: 70%;
+}
+
+.dan {
+  background: url(images/bg-pattern-quotation.svg) var(--Moderate-violet)
+    no-repeat top right 20%;
+}
+
+.dan img {
+  border: 3px solid hsl(263, 78%, 65%);
+}
+
+.jonathan {
+  background-color: var(--Very-dark-grayish-blue);
+}
+
+.jeanette {
+  background-color: var(--White);
+  color: var(--Very-dark-grayish-blue);
+}
+
+.patrick {
+  background-color: var(--Very-dark-blackish-blue);
+}
+
+.patrick img {
+  border: 3px solid var(--Moderate-violet);
+}
+
+.kira {
+  background-color: var(--White);
+  color: var(--Very-dark-grayish-blue);
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "dan dan jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  .card {
+    margin: 0.5rem;
+  }
+
+  .container {
+    width: 1110px;
+    height: 570px;
+  }
+
+  .dan {
+    grid-area: dan;
+  }
+
+  .jonathan {
+    grid-area: jonathan;
+  }
+
+  .jeanette {
+    grid-area: jeanette;
+  }
+
+  .kira {
+    grid-area: kira;
+  }
+
+  .patrick {
+    grid-area: patrick;
+  }
+}

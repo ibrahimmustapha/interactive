@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front-end</title>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+
+    <!-- Navbar icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Javascript links -->
+    <script type="text/javascript" src="javascripts/app.js"></script>
+</head>
+<body>
+             <!-- Navigation links of the website -->
+             <div class="topnav" id="myTopnav" style="text-align: center;">
+                <div class="logo" >
+                <h2><a href="/">Interactive!</a></h2>
+                </div>
+               
+            <nav>
+            <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="font-size: 20px;"></i></a></li>
+            <li><a href="/contactus">Get in touch</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <li><a id="active" href="/">Home</a></li>
+        </nav>
+        </div>
+
+        <h1 style="text-align: center; font-size: 55px; margin-top: 20px;">Get in Touch</h1>
+
+    <div class="container">
+        <div class="contact">
+           <div class="row">
+               <div class="column">
+                   <img src="images/calls.jpg" alt="music" class="m-image" >
+                <form action="/submit" method="POST">
+            
+                            <label for="">Your name</label>
+                            <input type="text" placeholder="Name" name="yname">
+           
+                            <label for="">Your email</label>
+                            <input type="email" placeholder="Email" name="email">
+   
+                            <label for="">Your message</label>
+                            <input type="text" placeholder="Message" name="message">
+        
+                            <input type="submit">
+
+                </form>
+               </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <p>Copyright ©2021 Interactive. All rights reserved.</p><br>
+
+    </footer>
+</body>
+</html>
